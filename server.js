@@ -1,8 +1,8 @@
+// all of the general dependencies and requirements to set up the project
 const express = require('express');
 const application = express();
 const controller = require('./controller/controller');
 require('dotenv').config();
-
 const db = process.env.DATABASE;
 const mongoose = require('mongoose');
 application.use(express.json());
